@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, red , orange, green, red);
+    background-size: 400%;
+    border-radius: 30px;
+}
+
+a:hover{
+    animation: animate 8s linear infinite;
+    box-shadow: 0 0 30px red;
+}
+@keyframes animate
+{
+    0%
+    {
+        background-position: 0%;
+    }
+    100%
+    {
+        background-position: 400%;
+    }
+}
